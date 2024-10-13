@@ -1,7 +1,8 @@
-body{
+body {
     font-family: "Poppins", sans-serif;
     background-image: url("../imagens/background.png");
     background-size: cover;
+    background-position: center;
 }
 
 body::before {
@@ -12,8 +13,7 @@ body::before {
     width: 100%;
     height: 100%;
     z-index: -1;
-
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(8px);
 }
 
 main {
@@ -39,7 +39,7 @@ main {
 }
 
 .cartao-pokedev.aberto {
-    display:block;
+    display: block;
 }
 
 .cartao-pokedev img {
@@ -103,7 +103,7 @@ main {
 }
 
 .tipo-agua {
-    background-color: #015c98;
+    background-color: #015C98;
 }
 
 .tipo-grama {
@@ -124,34 +124,33 @@ main {
 
 .listagem .pokedev img {
     width: 25%;
-    }
+}
 
-    .listagem .pokedev {
-        background-color: #6b727a;
-        color: #ffffff;
+.listagem .pokedev {
+    background-color: #6b727a;
+    color: #ffffff;
 
-       display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 5px;
-        margin-bottom: 10px;
-        cursor: pointer;
-        border-top-left-radius: 30px;
-        border-bottom-left-radius: 30px;
-        min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    min-height: 70px;
 
-        transition: 0.15 ease-in-out;
-    }
+    transition: 0.15 ease-in-out;
+}
 
-    .listagem .pokedev:hover {
-        transform: scale(1.05);
-    }
+.listagem .pokedev:hover {
+    transform: scale(1.05);
+}
 
-    .listagem .pokedev span {
-        padding-right: 20px;
-    }
+.listagem .pokedev span {
+    padding-right: 20px;
+}
 
-    .listagem .pokedev.ativo {
-        background-color: #fa6668;
-    }
-
+.listagem .pokedev.ativo {
+    background-color: #fa6668;
+}
